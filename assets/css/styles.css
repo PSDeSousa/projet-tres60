@@ -1,0 +1,214 @@
+/**
+**************** Initialisation **************************
+**/
+*{
+    margin :0;
+    padding :0;
+    box-sizing : border-box;
+    }
+/**
+**************** Police **************************
+**/
+/********** Inter **********/
+/** Inter light **/
+@font-face{
+    font-family:'Inter Light';
+    src:url('../fonts/inter/Inter_18pt-Light.ttf')
+}
+/** Inter Regular **/
+@font-face{
+    font-family:'Inter Regular';
+    src:url('../fonts/inter/Inter_18pt-Regular.ttf')
+}
+/********** Neue Machina **********/
+/** Neue Machina Regular **/
+@font-face{
+    font-family:'Neue Machina Regular';
+    src:url('../fonts/neue-machina/NeueMachina-Regular.otf')
+}
+/** Neue Machina Ultrabold **/
+@font-face{
+    font-family:'Neue Machina Ultrabold';
+    src:url('../fonts/neue-machina/NeueMachina-Ultrabold.otf')
+}
+/**
+**************** Commun **************************
+**/
+body
+{
+    background-color:#FFFFFF;
+    color:#FFFFFF;
+    font-family:'Inter Regular', sans-serif;
+}
+.column
+{
+    display:inline-block;
+}
+h1
+{
+    font-family:'Neue Machina Ultrabold', sans-serif;
+    font-size:3rem;
+}
+h2
+{
+    font-family:'Neue Machina Ultrabold', sans-serif;
+    font-size:1.5rem;
+}
+/**
+**************** Header **************************
+**/
+header .container
+{
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:10;
+}
+header .row
+{
+    width:85%;
+    position:relative;
+    margin:1rem auto;
+}
+header .row img
+{
+    width:3rem;
+}
+header .column
+{
+    width:3rem;
+    height:3rem;
+}
+header .column:first-child
+{
+    position:absolute;
+    left:0;
+}
+header .column:last-child
+{
+    position:absolute;
+    right:0;
+}
+header .column a
+{
+    position:absolute;
+    top:50%;
+    transform:translate(0 , -50%);/**** pour centrer verticalement les 2 pictos ****/
+}
+/**
+**************** Section Banner **************************
+**/
+.container-fluid
+{
+    width:100%;
+    background-image:url('../images/background/black-bg-5.jpg');
+    background-size:cover;
+    padding-top:5rem;
+    
+}
+.banner .row
+    {
+        width:85%;
+        margin:auto;
+    }
+.banner .column
+    {
+        width:48%;
+        position:relative;
+        height:120vh;
+        vertical-align:top;
+    }
+.banner .column:first-child
+    {
+        margin-right:1.2rem;
+    }
+.banner .column:last-child
+    {
+        margin-left:1.2rem;
+    }
+.banner .bloc
+{
+    position:absolute;
+    top:15%;
+    width:90%;
+}
+.banner .bloc .logo
+{
+    display:inline-block;
+    /**width:23%;**/
+    vertical-align:top;
+    
+}
+.banner .bloc .logo:last-child
+{
+    /**width:75%;**/
+}
+.banner .bloc .logo:first-child
+{
+    margin-right:2.5rem;
+}
+.banner .bloc .logo img
+{
+    width:4.5rem;
+}
+.banner .logo p
+{
+    font-family:'Inter Light', sans-serif;
+    font-size:0.7rem;
+    text-align:left;
+}
+.banner .content{
+    margin:3.5rem 0;
+    width:80%;
+}
+.content p
+{
+    margin-top:1rem;
+}
+/**
+**************** Defil / Card **************************
+**/
+.banner .defil
+{
+    margin-top:0.75rem;
+    width:100%;
+    height:38rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.banner .cell
+{
+    width:100%;
+    height:76rem;
+}
+.banner .card
+{
+    width:100%;
+    height:38rem;
+}
+.banner .card img
+{
+    width:100%;
+    object-fit:cover;
+    height: 38rem;
+}
+
+/**
+**************** CTA **************************
+**/
+.primary-button
+{
+    width:14rem;
+    height:2.5rem;
+    border-radius:3rem;
+    text-align:center;
+    padding:0.5rem;
+    margin:2rem 0;
+    background-color:#FFFFFF;
+    font-size:1.2rem;
+}
+.primary-button a
+{
+    color:#000;
+    text-decoration: 0;
+}
